@@ -47,10 +47,10 @@
 // | SHFT |     |     |     |     |     |   |  _  |  #  |     |  ^  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &trans &trans &trans    &kp PLUS &kp GRAVE   &trans &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
-   &trans    &kp AT &trans &kp TILDE &kp AMPS &kp MINUS   &trans &trans    &kp EQUAL &kp ASTRK &kp DLLR  &trans
-   &kp LSHFT &trans &trans &trans    &trans   &kp EXCL    &trans &kp HASH  &trans    &kp CARET &kp PIPE  &trans
-                           &trans    &mo 1    &mo 3       &trans &kp SPACE &mo 2
+   &kp TAB   &kp F1 &kp F2  &kp F3    &kp PLUS &kp GRAVE   &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
+   &trans    &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS   &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
+   &kp LSHFT &kp F9 &kp F10 &kp F11   &kp F12  &kp EXCL    &trans   &kp HASH  &trans    &kp CARET &kp PIPE  &trans
+                            &trans    &mo 1    &mo 3       &trans   &kp SPACE &mo 2
                         >;
                 };
 
@@ -64,7 +64,7 @@
    &trans  &trans  &trans       &trans       &trans       &trans    &kp FSLH  &kp N7  &kp N8 &kp N9 &kp MINUS &trans
    &trans  &trans  &bt BT_SEL 3 &bt BT_SEL 4 &trans       &trans    &kp ASTRK &kp N4  &kp N5 &kp N6 &kp PLUS  &trans
    &trans  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans    &kp BSPC  &kp N1  &kp N2 &kp N3 &kp RET   &trans
-                           &trans   &trans   &mo 3        &kp SPACE &kp N0    &kp DOT
+                   &trans       &trans       &mo 3        &kp SPACE &kp N0    &kp DOT
                         >;
                 };
         };
