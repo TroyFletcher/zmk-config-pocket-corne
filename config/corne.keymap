@@ -23,7 +23,7 @@
    &kp TAB   &kp Q &kp W &kp F     &kp P &kp G        &kp J    &kp U     &kp L     &kp Y   &kp SEMI &kp LBKT
    &kp LALT  &kp A &kp S &kp T     &kp R &kp D        &kp H    &kp N     &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT &kp Z &kp X &kp C     &kp V &kp B        &kp K    &kp M     &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                         &kp LCTRL &mo 1 &kp LGUI     &kp LGUI &kp SPACE &mo 2
+                         &kp LCTRL &mo 1 &mo 3        &kp LGUI &kp SPACE &mo 2
                         >;
                 };
 
@@ -34,10 +34,10 @@
 // | SHFT |     |     |     |     |     |   | del | bksp|     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&kp LA(F4) &kp ESC     &trans   &kp RET  &kp K_APP     &kp LS(INS)   &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
-   &trans  &kp LA(TAB) &kp TAB  &kp UP   &kp LC(PG_UP) &kp LC(PG_DN) &kp C_VOL_DN &kp LEFT   &kp DOWN &kp UP  &kp RIGHT &kp C_VOL_UP
-   &mo 3   &kp SPACE   &kp LEFT &kp DOWN &kp RIGHT     &trans        &kp DEL      &kp BSPC   &trans   &trans  &kp PRCNT &kp RPAR
-                                &trans   &mo 1         &trans        &trans       &kp SPACE  &kp LCTRL
+&kp LA(F4) &kp ESC     &trans   &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
+   &trans  &kp LA(TAB) &kp TAB  &kp UP   &kp LC(PG_UP) &kp LC(PG_DN)  &kp C_VOL_DN &kp LEFT   &kp DOWN &kp UP  &kp RIGHT &kp C_VOL_UP
+   &trans  &kp SPACE   &kp LEFT &kp DOWN &kp RIGHT     &trans         &kp DEL      &kp BSPC   &trans   &trans  &kp PRCNT &kp RPAR
+                                &trans   &trans        &trans         &trans       &kp SPACE  &kp LCTRL
                         >;
                 };
 
@@ -48,24 +48,24 @@
 // | SHFT |     |     |     |     |     |   |  _  |  #  |     |  ^  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp F1 &kp F2  &kp F3    &kp PLUS &kp GRAVE   &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
-   &trans    &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS   &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
-   &kp LSHFT &kp F9 &kp F10 &kp F11   &kp F12  &kp EXCL    &trans   &kp HASH  &trans    &kp CARET &kp PIPE  &trans
-                            &trans    &mo 1    &mo 3       &trans   &kp SPACE &mo 2
+   &kp TAB  &kp F1 &kp F2  &kp F3    &kp PLUS &kp GRAVE     &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
+   &trans   &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS     &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
+   &trans   &kp F9 &kp F10 &kp F11   &kp F12  &kp EXCL      &trans   &kp HASH  &trans    &kp CARET &kp PIPE  &trans
+                           &trans    &trans   &trans        &trans   &kp SPACE &trans
                         >;
                 };
 
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  7  |  8  |  9  |  -  | BKSP |
-// | LALT |     | BT3 | BT4 |     |     |   |  -  |  4  |  5  |  6  |  +  |  `   |
-// | SHFT |     | BT0 | BT1 | BT2 |     |   |  _  |  1  |  2  |  3  | RET |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |BTclr |     |     |BTUSB| ->BT|->USB|   |  /  |  7  |  8  |  9  |  -  |  :  |
+// | LALT |     | BT3 | BT4 |     |     |   |  *  |  4  |  5  |  6  |  +  | TAB |
+// | SHFT |     | BT0 | BT1 | BT2 |     |   |BKSP |  1  |  2  |  3  | RET |  ,  |
+//                    |     |     | MO3 |   |SPACE|  0  |  .  |
                         bindings = <
-   &trans  &trans  &trans       &out OUT_TOG &out OUT_BLE &out OUT_USB   &kp FSLH  &kp N7  &kp N8 &kp N9 &kp MINUS &kp COLON
-   &trans  &trans  &bt BT_SEL 3 &bt BT_SEL 4 &trans       &trans         &kp ASTRK &kp N4  &kp N5 &kp N6 &kp PLUS  &kp TAB
-   &trans  &trans  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans         &kp BSPC  &kp N1  &kp N2 &kp N3 &kp RET   &kp COMMA
-                   &trans       &trans       &mo 3        &kp SPACE      &kp N0    &kp DOT
+   &bt BT_CLR &trans  &trans       &out OUT_TOG  &out OUT_BLE       &out OUT_USB  &kp FSLH  &kp N7  &kp N8 &kp N9 &kp MINUS &kp COLON
+   &trans     &trans  &bt BT_SEL 3 &bt BT_SEL 4  &trans             &trans        &kp ASTRK &kp N4  &kp N5 &kp N6 &kp PLUS  &kp TAB
+   &trans     &trans  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2       &kp DEL       &kp BSPC  &kp N1  &kp N2 &kp N3 &kp RET   &kp COMMA
+                      &trans       &trans        &trans             &kp SPACE     &kp N0    &kp DOT
                         >;
                 };
         };
