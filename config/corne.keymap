@@ -30,7 +30,7 @@
                 lower_layer {
 // --------------------------------------   -------------------------------------
 // |ALT F4| ESC |     | RET | APP |SHINS|   |     | MUTE|     |     |PLAY |  (  |
-// | LALT |ALTAB| TAB | UP  | BT4 | BT5 |   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
+// | LALT |ALTAB| TAB | UP  |TABv|TAB^|   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
 // | SHFT |SPACE|LEFT | DN  |RIGHT|     |   | del | bksp|     |     |  %  |  )  |
 //                    |-----| MO1 |-----|   | GUI |SPACE| CTRL|
                         bindings = <
