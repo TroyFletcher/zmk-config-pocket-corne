@@ -14,11 +14,11 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
+// --------------------------------------   --------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  U   |  L  |  Y  |  ;  |  [  |
 // | LALT |  A  |  S  |  T  |  R  |  D  |   |  H  |  N   |  E  |  I  |  O  |  '  |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  |  ]  |
-//                    | GUI | MO1 | MO3 |   | GUI | SPC  | MO2 |
+//                    | CTRL| MO1 | MO3 |   | GUI | SPC  | MO2 |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F     &kp P &kp G        &kp J    &kp U     &kp L     &kp Y   &kp SEMI &kp LBKT
    &kp LALT  &kp A &kp S &kp T     &kp R &kp D        &kp H    &kp N     &kp E     &kp I   &kp O    &kp SQT
@@ -28,11 +28,11 @@
                 };
 
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | LALT | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   | del | bksp|     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// --------------------------------------   -------------------------------------
+// |ALT F4| ESC |     | RET | APP |SHINS|   |     | MUTE|     |     |PLAY |  (  |
+// | LALT |ALTAB| TAB | UP  | BT4 | BT5 |   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
+// | SHFT |SPACE|LEFT | DN  |RIGHT|     |   | del | bksp|     |     |  %  |  )  |
+//                    |-----| MO1 |-----|   | GUI |SPACE| CTRL|
                         bindings = <
 &kp LA(F4) &kp ESC     &trans   &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
    &trans  &kp LA(TAB) &kp TAB  &kp UP   &kp LC(PG_UP) &kp LC(PG_DN)  &kp C_VOL_DN &kp LEFT   &kp DOWN &kp UP  &kp RIGHT &kp C_VOL_UP
@@ -42,11 +42,11 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |     |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | bkslh|
-// | LALT |  @  |     |     |     |  -  |   |  -  |  =  |  [  |  ]  |  $  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  #  |     |  ^  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// --------------------------------------   --------------------------------------
+// |  TAB |  F1 | F2  | F3  |  +  |  `  |   |     |  _  | PGDN| PGUP|PRINT| bkslh|
+// | LALT |  @  |     |  ~  |  &  |  -  |   | HOME|     |  =  |  *  |  $  |  END |
+// | SHFT |  F9 | F10 | F11 | F12 |  !  |   |     |  #  |     |  ^  | "|" |      |
+//                    |     |     |     |   |-----|-----| MO2 |
                         bindings = <
    &kp TAB  &kp F1 &kp F2  &kp F3    &kp PLUS &kp GRAVE     &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
    &trans   &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS     &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
@@ -56,16 +56,16 @@
                 };
 
                 num_layer {
-// -----------------------------------------------------------------------------------------
+// --------------------------------------   -------------------------------------
 // |BTclr |     |     |BTUSB| ->BT|->USB|   |  /  |  7  |  8  |  9  |  -  |  :  |
 // | LALT |     | BT3 | BT4 | GUI |     |   |  *  |  4  |  5  |  6  |  +  | TAB |
 // | SHFT |     | BT0 | BT1 | BT2 | DEL |   |BKSP |  1  |  2  |  3  | RET |  ,  |
-//                    |     |     | MO3 |   |SPACE|  0  |  .  |
+//                    |-----|-----| MO3 |   |SPACE|  0  |  .  |
                         bindings = <
-   &bt BT_CLR &trans  &trans       &out OUT_TOG  &out OUT_BLE       &out OUT_USB  &kp FSLH  &kp N7  &kp N8 &kp N9 &kp MINUS &kp COLON
-   &trans     &trans  &bt BT_SEL 3 &bt BT_SEL 4  &kp LGUI           &trans        &kp ASTRK &kp N4  &kp N5 &kp N6 &kp PLUS  &kp TAB
-   &trans     &trans  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2       &kp DEL       &kp BSPC  &kp N1  &kp N2 &kp N3 &kp RET   &kp COMMA
-                      &trans       &trans        &trans             &kp SPACE     &kp N0    &kp DOT
+   &bt BT_CLR &trans  &trans       &out OUT_TOG  &out OUT_BLE &out OUT_USB  &kp FSLH  &kp N7  &kp N8 &kp N9 &kp MINUS &kp COLON
+   &trans     &trans  &bt BT_SEL 3 &bt BT_SEL 4  &kp LGUI     &trans        &kp ASTRK &kp N4  &kp N5 &kp N6 &kp PLUS  &kp TAB
+   &trans     &trans  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &kp DEL       &kp BSPC  &kp N1  &kp N2 &kp N3 &kp RET   &kp COMMA
+                                   &trans       &trans        &trans        &kp SPACE &kp N0    &kp DOT
                         >;
                 };
         };
