@@ -32,12 +32,12 @@
 // |ALT F4| ESC |     | RET | APP |SHINS|   |     | MUTE|     |     |PLAY |  (  |
 // | LALT |ALTAB| TAB | UP  |TABv|TAB^|   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
 // | SHFT |SPACE|LEFT | DN  |RIGHT|     |   | del | bksp|     |     |  %  |  )  |
-//                    |-----| MO1 |-----|   | GUI |SPACE| CTRL|
+//                    | MO3 | MO1 |-----|   | GUI |SPACE| CTRL|
                         bindings = <
 &kp LA(F4) &kp ESC     &trans   &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
    &trans  &kp LA(TAB) &kp TAB  &kp UP   &kp LC(PG_UP) &kp LC(PG_DN)  &kp C_VOL_DN &kp LEFT   &kp DOWN &kp UP  &kp RIGHT &kp C_VOL_UP
    &trans  &kp SPACE   &kp LEFT &kp DOWN &kp RIGHT     &trans         &kp DEL      &kp BSPC   &trans   &trans  &kp PRCNT &kp RPAR
-                                &trans   &trans        &trans         &trans       &kp SPACE  &kp LCTRL
+                                &mo 3    &trans        &trans         &trans       &kp SPACE  &kp LCTRL
                         >;
                 };
 
