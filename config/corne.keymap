@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(x)> , <&kp AT> , <&kp H> ;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
