@@ -45,12 +45,12 @@
 // --------------------------------------   --------------------------------------
 // |  TAB |  F1 | F2  | F3  |  +  |  `  |   |     |  _  | PGDN| PGUP|PRINT| bkslh|
 // | LALT |  @  |     |  ~  |  &  |  -  |   | HOME|     |  =  |  *  |  $  |  END |
-// | SHFT |  F9 | F10 | F11 | F12 |  !  |   |     |  #  |     |  ^  | "|" |      |
+// | SHFT |  F9 | F10 | F11 | F12 |  !  |   |     |  #  |     |  ^  | "|" |hyper |
 //                    |     |     |     |   |-----|-----| MO2 |
                         bindings = <
    &kp TAB  &kp F1 &kp F2  &kp F3    &kp PLUS &kp GRAVE     &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
    &trans   &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS     &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
-   &trans   &kp F9 &kp F10 &kp F11   &kp F12  &kp EXCL      &trans   &kp HASH  &trans    &kp CARET &kp PIPE  &trans
+   &trans   &kp F9 &kp F10 &kp F11   &kp F12  &kp EXCL      &trans   &kp HASH  &trans    &kp CARET &kp PIPE  &hyper
                            &trans    &trans   &trans        &trans   &kp SPACE &trans
                         >;
                 };
