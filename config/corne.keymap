@@ -14,12 +14,17 @@
         hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp AT &kp H>
-                ;
+            bindings = <&kp LC(X)> , <&kp AT> , <&kp H> ;
+        };
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp L &kp E &kp T &kp C &kp H &kp E &kp R>
+	             , <&kp DOT>
+	             , <&kp T &kp R &kp O &kp Y>
+	             , <&kp AT>
+	             , <&kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
+	             ;
         };
     };
 };
@@ -58,12 +63,12 @@
 
                 raise_layer {
 // --------------------------------------   --------------------------------------
-// |  TAB |     |     |     |  +  |  `  |   |     |  _  | PGDN| PGUP|PRINT| bkslh|
+// |  TAB |email|     |     |  +  |  `  |   |     |  _  | PGDN| PGUP|PRINT| bkslh|
 // | LALT |  @  |     |  ~  |  &  |  -  |   | HOME|     |  =  |  *  |  $  |  END |
 // | SHFT |     |     |     |     |  !  |   | MO4 |  #  |     |  ^  | "|" |hyper |
 //                    |     |     |     |   |-----|-----| MO2 |
                         bindings = <
-   &kp TAB  &trans &trans  &trans    &kp PLUS &kp GRAVE     &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
+   &kp TAB  &email &trans  &trans    &kp PLUS &kp GRAVE     &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
    &trans   &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS     &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
    &trans   &trans &trans  &trans    &trans   &kp EXCL      &mo 4   &kp HASH  &trans    &kp CARET &kp PIPE  &hyper
                            &trans    &trans   &trans        &trans   &kp SPACE &trans
