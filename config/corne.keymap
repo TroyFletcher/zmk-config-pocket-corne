@@ -33,7 +33,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                default_layer { // 0
 // --------------------------------------   --------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  U   |  L  |  Y  |  ;  |  [  |
 // | LALT |  A  |  S  |  T  |  R  |  D  |   |  H  |  N   |  E  |  I  |  O  |  '  |
@@ -47,7 +47,7 @@
                         >;
                 };
 
-                lower_layer {
+                lower_layer { // 1
 // --------------------------------------   -------------------------------------
 // |ALT F4| ESC | MO3 | RET | APP |SHINS|   |     | MUTE|     |     |PLAY |  (  |
 // | LALT |ALTAB| TAB | UP  |TABv |TAB^ |   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
@@ -61,7 +61,7 @@
                         >;
                 };
 
-                raise_layer {
+                raise_layer { // 2
 // --------------------------------------   --------------------------------------
 // |  TAB |email|     |     |  +  |  `  |   |     |  _  | PGDN| PGUP|PRINT| bkslh|
 // | LALT |  @  |     |  ~  |  &  |  -  |   | HOME|     |  =  |  *  |  $  |  END |
@@ -75,7 +75,7 @@
                         >;
                 };
 
-                num_layer {
+                num_layer { // 3
 // --------------------------------------   -------------------------------------
 // |BTclr |     |-----|BTUSB| ->BT|->USB|   |  /  |  7  |  8  |  9  |  -  |  :  |
 // | LALT |     | BT3 | BT4 | GUI |     |   |  *  |  4  |  5  |  6  |  +  | TAB |
@@ -88,7 +88,7 @@
                                    &trans       &trans        &trans        &kp SPACE &kp N0    &kp DOT
                         >;
                 };
-                fn_layer {
+                fn_layer { // 4
 // --------------------------------------   -------------------------------------
 // |  TAB |  F1 | F2  | F3  | F4  |     |   |     |     |     |     |     |     |
 // | LALT |  F5 | F6  | F7  | F8  |     |   |     |     |     |     |     |     |
