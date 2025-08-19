@@ -49,12 +49,12 @@
 
                 lower_layer {
 // --------------------------------------   -------------------------------------
-// |ALT F4| ESC |     | RET | APP |SHINS|   |     | MUTE|     |     |PLAY |  (  |
-// | LALT |ALTAB| TAB | UP  |TABv|TAB^|   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
+// |ALT F4| ESC | MO3 | RET | APP |SHINS|   |     | MUTE|     |     |PLAY |  (  |
+// | LALT |ALTAB| TAB | UP  |TABv |TAB^ |   |VOLdn| LFT | DWN |  UP | RGT |VOLup|
 // | SHFT |SPACE|LEFT | DN  |RIGHT|     |   | del | bksp|     |     |  %  |  )  |
 //                    | MO3 | MO1 |-----|   | GUI |SPACE| CTRL|
                         bindings = <
-&kp LA(F4) &kp ESC     &trans   &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
+&kp LA(F4) &kp ESC     &mo 3    &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
    &trans  &kp LA(TAB) &kp TAB  &kp UP   &kp LC(PG_UP) &kp LC(PG_DN)  &kp C_VOL_DN &kp LEFT   &kp DOWN &kp UP  &kp RIGHT &kp C_VOL_UP
    &trans  &kp SPACE   &kp LEFT &kp DOWN &kp RIGHT     &trans         &kp DEL      &kp BSPC   &trans   &trans  &kp PRCNT &kp RPAR
                                 &mo 3    &trans        &trans         &trans       &kp SPACE  &kp LCTRL
@@ -77,7 +77,7 @@
 
                 num_layer {
 // --------------------------------------   -------------------------------------
-// |BTclr |     |     |BTUSB| ->BT|->USB|   |  /  |  7  |  8  |  9  |  -  |  :  |
+// |BTclr |     |-----|BTUSB| ->BT|->USB|   |  /  |  7  |  8  |  9  |  -  |  :  |
 // | LALT |     | BT3 | BT4 | GUI |     |   |  *  |  4  |  5  |  6  |  +  | TAB |
 // | SHFT |     | BT0 | BT1 | BT2 | DEL |   |BKSP |  1  |  2  |  3  | RET |  ,  |
 //                    |-----|-----| MO3 |   |SPACE|  0  |  .  |
