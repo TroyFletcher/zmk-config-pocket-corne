@@ -40,7 +40,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  |  ]  |
 //                    | CTRL| MO1 | MO3 |   | GUI | SPC  | MO2 |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp F     &kp P &kp G        &kp J    &kp U     &kp L     &kp Y   &kp SEMI &kp LBKT
+   &trans    &kp Q &kp W &kp F     &kp P &kp G        &kp J    &kp U     &kp L     &kp Y   &kp SEMI &kp LBKT
    &kp LALT  &kp A &kp S &kp T     &kp R &kp D        &kp H    &kp N     &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT &kp Z &kp X &kp C     &kp V &kp B        &kp K    &kp M     &kp COMMA &kp DOT &kp FSLH &kp RBKT
                          &kp LCTRL &mo 1 &mo 3        &kp LGUI &kp SPACE &mo 2
@@ -54,7 +54,7 @@
 // | SHFT |SPACE|LEFT | DN  |RIGHT|     |   | del | bksp|     |     |  %  |  )  |
 //                    | MO3 | MO1 |-----|   | GUI |SPACE| CTRL|
                         bindings = <
-&kp LA(F4) &kp ESC     &mo 3    &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
+   &trans  &kp ESC     &mo 3    &kp RET  &kp K_APP     &kp LS(INS)    &trans       &kp C_MUTE &trans   &trans  &kp C_PP  &kp LPAR
    &trans  &kp LA(TAB) &kp TAB  &kp UP   &kp LC(PG_UP) &kp LC(PG_DN)  &kp C_VOL_DN &kp LEFT   &kp DOWN &kp UP  &kp RIGHT &kp C_VOL_UP
    &trans  &kp SPACE   &kp LEFT &kp DOWN &kp RIGHT     &trans         &kp DEL      &kp BSPC   &trans   &trans  &kp PRCNT &kp RPAR
                                 &mo 3    &trans        &trans         &trans       &kp SPACE  &kp LCTRL
@@ -70,7 +70,7 @@
                         bindings = <
    &kp TAB  &email &trans  &trans    &kp PLUS &kp GRAVE     &trans   &kp UNDER &kp PG_DN &kp PG_UP &kp PSCRN &kp BSLH
    &trans   &kp AT &trans  &kp TILDE &kp AMPS &kp MINUS     &kp HOME &trans    &kp EQUAL &kp ASTRK &kp DLLR  &kp END
-   &trans   &trans &trans  &trans    &trans   &kp EXCL      &mo 4   &kp HASH  &trans    &kp CARET &kp PIPE  &hyper
+ &trans &kp LA(F4) &trans  &trans    &trans   &kp EXCL      &mo 4   &kp HASH  &trans    &kp CARET &kp PIPE  &hyper
                            &trans    &trans   &trans        &trans   &kp SPACE &trans
                         >;
                 };
